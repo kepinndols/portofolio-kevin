@@ -799,6 +799,7 @@ text-align: center  ;
 }
 
 
+
 /* BREAKPOINTS */
 
 
@@ -847,7 +848,7 @@ text-align: center  ;
         }
 
         .about{
-            height: 80vh;
+            height: 90vh;
         }
 
         .education .education-row {
@@ -866,17 +867,8 @@ text-align: center  ;
 
     }
 
+
     @media(max-width: 768px){
-       
-
-        .education .education-row {
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .education .heading{
-            padding-bottom: 5rem;
-        }
 
         .home-img{
             display: none;
@@ -885,6 +877,30 @@ text-align: center  ;
         .home-content{
             max-width: 80%;
         }
+
+        .home-sci{
+            left: 2.2rem;
+        }
+
+        .about .about-content p {
+            margin: 0;
+            padding: 0  1rem;
+        }
+
+       .education{
+            height: 150vh;
+        }
+
+        
+        .education .education-row {
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .education .heading{
+            padding-bottom: 2rem;
+        }
+
 
         #menu-icon{
             display: block;
@@ -935,8 +951,6 @@ text-align: center  ;
 }
 
 
-
-        
         header .navbar .link a{
             display: block;
             margin: 3rem 0; 
@@ -945,13 +959,14 @@ text-align: center  ;
         }
     }
 
+
     @media (max-width: 520px){
         html{
             font-size: 60%;
         }
 
         .home{
-            height: 90vh;
+            height: 100vh;
         }
 
         .home-content{
@@ -963,7 +978,7 @@ text-align: center  ;
         }
 
         .home-sci{
-            bottom: 15rem;
+            bottom: 5rem;
             left: 2.5rem;
         }
 
@@ -973,10 +988,23 @@ text-align: center  ;
         }
 
         .about{
-            padding-top: 11rem;
+            padding-top: 9rem;
+        }
+        .about .about-content p {
+            margin: 0;
         }
         #education .heading{
-            padding-bottom: 5rem;
+            padding-bottom: 2rem;
+        }
+
+        .education{
+            height: 130vh;
+        }
+
+        .education-box .education-content::before {
+            width: 20px;
+            height: 20px;
+            left: -1.2rem;
         }
     }
 
